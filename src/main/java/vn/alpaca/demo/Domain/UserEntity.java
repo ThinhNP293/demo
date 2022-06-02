@@ -1,6 +1,8 @@
 package vn.alpaca.demo.Domain;
 
 
+import vn.alpaca.demo.Oauth2.CustomOAuth2User;
+
 import javax.persistence.*;
 import java.security.Provider;
 
@@ -30,7 +32,6 @@ public class UserEntity {
     public enum Provider {
         LOCAL, GOOGLE
     }
-
     public long getId() {
         return id;
     }

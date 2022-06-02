@@ -20,8 +20,8 @@ public class UserController {
     }
 
     @GetMapping
-    public List<UserEntity> viewAllUser() {
-        return userService.getAllUser();
+    public String viewAllUser() {
+        return userService.getCurrentUser();
     }
 
     @GetMapping("/register")
